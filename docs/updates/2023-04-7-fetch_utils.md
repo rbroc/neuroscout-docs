@@ -1,4 +1,4 @@
-# API for fetching Neuroscout data for analysis, and an encoding model example
+# API for fetching Neuroscout data for analysis and an encoding model example
 
 ```{post} 2023-04-7
 :author: Alejandro de la Vega
@@ -18,7 +18,7 @@ As a reminder, Neuroscout indexes over a dozen openly available neuroimaging dat
 
 The new `pyns.fetch_utils` allow users to easily fetch predictors and brain imaging time courses from any of these datasets. `fetch_predictors` allows users to fetch several predictors from any of the indexed datasets simultaneously using a simple API, and optionally apply transformations using the `pybids.modeling` tools (like you would in BIDS Stats Models). For example, you can easily resample the predictors to TR (which may be sampled at different rates), rescale them, and densify them (may be sparse) into an aligned timecourse. 
 
-`fetch_images` allows users to downloading preprocessed brain imaging time courses from any of the indexed datasets (with the help of [DataLad](datalad.org)) that align with the predictors.
+`fetch_images` allows users to downloading preprocessed brain imaging time courses from any of the indexed datasets (with the help of [DataLad](https://www.datalad.org/) that align with the predictors.
 
 With a set of predictors, and a set of brain imaging time courses, users can then easily fit any custom analysis they want using their favorite machine learning library, such as scikit-learn. 
 
@@ -26,17 +26,17 @@ To learn more about `pyns.fetch_utils`, check out the [documentation](https://py
 
 ## An encoding model tutorial! 🚀
 
-To demonstrate how to use `pyns.fetch_utils`, we have created a new example notebook that demonstrates how to fit a simple voxel-wise encoding model using the new API fetch utilities. 
+To demonstrate how to use `pyns.fetch_utils`, we have created a new example notebook that demonstrates how to fit a simple voxelwise encoding model using the new API fetch utilities. 
 
-In this example, we implement a cross-validated voxel-wise encoding model for a single subject using Regularized Ridge Regression. This example was based on the fantastic voxelwise modeling tutorials by the Gallantlab, so be sure to check out their tutorials if you are interested in learning more voxel-wise encoding models for fMRI data. 
+In this example, we implement a cross-validated voxelwise encoding model for a single subject using ridge regression implemented in [Himalaya](https://github.com/gallantlab/himalaya). This example was based on the fantastic [voxelwise modeling tutorials](https://gallantlab.org/voxelwise_tutorials/) by the Gallant Lab , so be sure to check out their tutorials if you are interested in learning more about voxelwise encoding models for fMRI data. 
 
-Check out the [example in the Neuroscout Docs](https://neuroscout.github.io/neuroscout-docs/python_api/ridge_encoding.html), and following along in the cloud using Google Colab by clicking on the 🚀.
+Check out the [example in the Neuroscout Docs](https://neuroscout.github.io/neuroscout-docs/python_api/ridge_encoding.html), and follow along in the cloud using Google Colab by clicking on the 🚀.
 
 ## Where to go from here? 
 
 We hope `pyns.fetch_utils` will help you create your own custom workflows using the Neuroscout platform.
 
-However, be aware we are actively working on expanding the types of analyses that can be performed on Neuroscout, with a focus on adding support for voxelwide encoding models in BIDS Stats Models, and [Neuroscout-CLI](https://neuroscout-cli.readthedocs.io/en/latest/).
+However, be aware we are actively working on expanding the types of analyses that can be performed on Neuroscout, with a focus on adding support for voxelwise encoding models in BIDS Stats Models and [Neuroscout-CLI](https://neuroscout-cli.readthedocs.io/en/latest/).
 
 Also, note that by implementing a custom pipeline, your analysis will not be centrally registered on neuroscout.org, and a reproducible record will not be made. For analyses supported the [Neuroscout-CLI](https://neuroscout-cli.readthedocs.io/en/latest/), it is recommended to use the neuroscout.org web inteface, or follow the guide for programmatically creating analyses using [pyNS](https://pyns.readthedocs.io/en/latest/analyses.html).
 

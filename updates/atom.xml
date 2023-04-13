@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>https://neuroscout.github.io/neuroscout-docs/</id>
+  <title>Neuroscout Blog</title>
+  <updated>2023-04-13T14:45:54.005863+00:00</updated>
+  <link href="https://neuroscout.github.io/neuroscout-docs/"/>
+  <link href="https://neuroscout.github.io/neuroscout-docs/updates/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.3">ABlog</generator>
+  <entry>
+    <id>https://neuroscout.github.io/neuroscout-docs/updates/2022-08-25-preprint.html</id>
+    <title>Big news from the Neuroscout team!</title>
+    <updated>2022-08-25T00:00:00+00:00</updated>
+    <author>
+      <name>Alejandro de la Vega</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;We’re excited to share that our paper: “Neuroscout, a unified platform for generalizable and reproducible fMRI research” is available in &lt;a class="reference external" href="https://elifesciences.org/articles/79277"&gt;eLife&lt;/a&gt;. We break down Neuroscout’s approach and validate it across 35 distinct naturalistic experiments.&lt;/p&gt;
+&lt;p&gt;Here are some of the highlights, along with some new features you might have missed since you last visited.&lt;/p&gt;
+&lt;/div&gt;
+
+    &lt;script type="text/x-thebe-config"&gt;
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "neuroscout/neuroscout-docs",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    &lt;/script&gt;
+    &lt;script&gt;kernelName = 'python3'&lt;/script&gt;</content>
+    <link href="https://neuroscout.github.io/neuroscout-docs/updates/2022-08-25-preprint.html" rel="alternate"/>
+    <summary>We’re excited to share that our paper: “Neuroscout, a unified platform for generalizable and reproducible fMRI research” is available in eLife. We break down Neuroscout’s approach and validate it across 35 distinct naturalistic experiments.Here are some of the highlights, along with some new features you might have missed since you last visited.</summary>
+    <category term="newsletter" label="newsletter"/>
+    <published>2022-08-25T00:00:00+00:00</published>
+  </entry>
+</feed>
